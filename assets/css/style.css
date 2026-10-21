@@ -1,0 +1,54 @@
+* {
+
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.moviecard {
+
+    height: 500px;
+    overflow: hidden;
+    /* border: 2px solid black; */
+    /* object-fit: cover; */
+}
+
+
+.moviecard img {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.titleinfo {
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: burlywood;
+    padding: 15px;
+
+}
+
+.overview {
+
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    background-color: white;
+    transform: scale(0);
+    transition: all 0.7s linear;
+    opacity: 0.9;
+}
+
+.moviecard: is (:hover,:focus,:active){
+
+    transform: scale(1)
+}
